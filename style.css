@@ -155,13 +155,6 @@ body {
   left: 50%;
   width: 20px;
   height: 140px;
-  background: linear-gradient(to bottom, #228B22, #006400);
-  border-radius: 0 0 50% 50%;
-  box-shadow: 0 0 5px #006400;
-  transform: translateX(-50%);
-  animation: sway 3s infinite ease-in-out;
-
-  z-index: -1; /* 🔥 Esto lo pone completamente detrás de todo */
 }
 
 
@@ -180,4 +173,52 @@ body {
 
   /* Efecto de brillo alrededor */
   text-shadow: 0 0 10px #a58aff, 0 0 20px #a58aff, 0 0 30px #a58aff;
+}
+
+.Petal1,
+.Petal2,
+.Petal3 {
+  /* Efecto de brillo adicional */
+  box-shadow: 0 0 15px #ffae00, 0 0 15px #ffae00;
+}
+
+.mid {
+  /* Efecto de brillo para el centro */
+  box-shadow: 0 0 20px #ff5e00, 0 0 30px #ff5e00;
+}
+
+.mid {
+  /* Efecto de brillo para el centro */
+  box-shadow: 0 0 20px #ff5e00, 0 0 30px #ff5e00;
+}
+
+
+.stem2 {
+  position: absolute;
+  top: 105%;
+  left: 64%;
+  width: 40px;
+  height: 20px;
+
+}
+
+.stem3 {
+  position: absolute;
+  top: 105%;
+  left: 35%;
+  width: 40px;
+  height: 20px;
+  
+}
+
+.stem,
+.stem2,
+.stem3{
+  background: linear-gradient(to bottom, #228B22, #006400);
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: 0 0 15px #228B22, 0 0 30px #228B22;
+  transform-origin: top left;
+  animation: sway 3s infinite ease-in-out;
+  z-index: -1;
+
 }
